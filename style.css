@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* use later  #f1f6fd */
+
+@font-face {
+    font-family: "FuturaMedium";  
+    src: url("../Assets/Fonts/FuturaMedium.ttf") format("ttf");
+}
+
+body {
+    font-family: FuturaMedium;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    min-height: 30px;
+    padding: 15px;
+    background-color: white;
+}
+
+section {
+    width: 100vw;
+}
+
+.logo {
+    height: 6vh;
+}
+
+#nav-link {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 425;
+}
+
+#nav-link:hover {
+    color: #6A73FE;
+    font-weight: 550;
+}
+
+#extra-btn {
+    height: 6vh; 
+    color: rgb(147, 66, 253);
+    width: 7vw; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+#extra-btn:hover {
+    transition: all 1200ms ease;
+    color: rgb(140, 52, 255);
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.column-50 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 1;
+}
+
+.column-33 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.3;
+}
+
+.column-66 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.6;
+}
+
+.column-25 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.25;
+}
+
+.column-75 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.75;
+}
+
+.column-40 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.40;
+}
+
+.column-60 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.60;
+}
+
+.column-55 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.55;
+}
+
+.column-45 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.45;
+}
+
+#welcome {
+    margin-top: 15vh;
+}
+
+#welcome-links {
+    font-weight: 450;
+    background-color: rgb(147, 66, 253); 
+    border: none;
+    margin-right: 1%;
+}
+
+#welcome-links:hover {
+    background-color: rgb(137, 46, 255);
+}
+
+#landing-message {
+    margin-right: 5%;
+}
+
+#landing-img img{
+    width: 55vw;
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100vw;
+        margin: auto;
+    }
+
+    #landing-message {
+        margin-right: 0;
+        width: 80vw;
+        margin: auto;
+        flex: 1;
+        text-align: center;
+    }
+
+    #landing-img img{
+        width: 80vw;
+        margin: auto;
+    }
+
+    #landing-img {
+        padding-top: 10%;
+        width: 100vw;
+        flex: 1;
+    }
+
+    .navbar-toggler-icon {
+        color: rgb(147, 66, 253);
+    }
+}
