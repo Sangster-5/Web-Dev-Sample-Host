@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrakenVPN</title>
+
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/c12bb62ffb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="navbar-brand">
+                    <a href="/" title="KrakenVPN">
+                        <img class="logo" src="./Assets/Images/octovpn-logo-black.svg" alt="Failed">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" href="/#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" href="/#services">Services</a>
+                        </li>
+                    </ul>
+                    <div class="extra-menu d-flex" id="nav-link">
+                        <a href="/" class="nav-link" id="extra-btn">Buy</a>
+                    </div>
+                </div>
+              </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div id="landing-message" class="column-45">
+                        <h1 style="font-weight: 400; font-size: calc(1.375rem + 1.5vw); color: #1d1d33;">
+                            Welcome to 
+                            <span style="color: rgb(147, 66, 253);">KrakenVPN</span>.
+                            DDoS Protected VPN.
+                        </h1>
+
+                        <p style="font-weight: 400; font-size: 1rem; color: #8090b5; line-height: 1.7; font-family: poppins,sans-serif;">
+                            The first DDoS Protected VPN on the market w/ over 48 DDoS Protected locations. Now available for iOS & Android.
+                        </p>
+
+
+                        <div class="p-10px-t" id="welcome-links-div" style="display: flex; align-items: flex-end;">
+                            <a class="btn btn-primary" id="welcome-links" href="#services">View Services <i class="fas fa-arrow-right d-none d-md-inline m-10px-l"></i></a>
+                            <a class="btn btn-primary" id="welcome-links" target="_blank" href="https://discord.gg/tqaupHJgDx">Discord <i class="fab fa-discord d-none d-md-inline m-10px-l"></i></a>
+                        </div>
+
+                    </div>
+                    <div id="landing-img-container" class="column-55">
+                        <img id="landing-img" src="./Assets/Images/gaming.svg" alt="Failed">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="margin-bottom: 15vh;">
+            <div class="container">
+                <div class="row" style="justify-content: center; text-align: center;">
+                    <div class="column-66">
+                        <h3 style="font-weight: 400; margin-bottom: 10px; color: #1d1d33; line-height: 1.4; font-size: 3rem;">Why OctoVPN?</h3>
+
+                        <p style="color: #8090b5; line-height: 1.7; font-weight: 400; margin: auto;">
+                        With OctoVPN, you can play your favorite games without fear of losing your Internet connection due to a (D)DoS attack, and for added security, using a VPN will mask your physical location!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row" style="justify-content: center; padding-bottom: 5vh; padding-top: 5vh;">
+                    <div class="col-md-6 col-lg-5" id="cards">
+                        <img src="./Assets/Images/phone.svg" alt="Failed" class="column-33">
+                        <div id="card-content" class="column-66">
+                            <h6 id="card-heading">iOS & Android App</h6>
+                            <p id="card-text">
+                                Check out our iOS & Android app in the Play Store / App Store.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5" id="cards">
+                        <img src="./Assets/Images/securityon.svg" alt="Failed" class="column-33"> 
+                        <div id="card-content" class="column-66">
+                            <h6 id="card-heading">Custom Firewall</h6>
+                            <p id="card-text">
+                                With our custom firewall & anti-ddos rules that we constantly update, you'll be protected.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5" id="cards">
+                        <img src="./Assets/Images/server.svg" alt="Failed" class="column-33"> 
+                        <div id="card-content" class="column-66">
+                            <h6 id="card-heading">Secure & Encrypted</h6>
+                            <p id="card-text">
+                                Military-Grade Encryption & a respectable privacy policy, we take your privacy serious.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5" id="cards">
+                        <img src="./Assets/Images/alert.svg" alt="Failed" class="column-33"> 
+                        <div id="card-content" class="column-66">
+                            <h6 id="card-heading">Attack Alerts</h6>
+                            <p id="card-text">
+                                Email, Push & Discord Alerts soon as we detect an attack to a server you are connected to.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="row">
+            <div id="service-cards" class="column-27">
+            </div>
+            <div id="service-cards" class="column-27">
+            </div>
+            <div id="service-cards" class="column-27">
+            </div>
+        </section>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>

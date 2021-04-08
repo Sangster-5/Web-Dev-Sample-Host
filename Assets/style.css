@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-/* use later  #f1f6fd */
-
 @font-face {
     font-family: "FuturaMedium";  
     src: url("../Assets/Fonts/FuturaMedium.ttf") format("ttf");
@@ -21,6 +19,7 @@ header {
     min-height: 30px;
     padding: 15px;
     background-color: white;
+    z-index: 1;
 }
 
 section {
@@ -69,7 +68,28 @@ section {
     display: flex;
     flex-direction: column;
     flex-basis: 100vw;
+    flex: 0.33;
+}
+
+.column-30 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
     flex: 0.3;
+}
+
+.column-27 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.27;
+}
+
+.column-29 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.29;
 }
 
 .column-66 {
@@ -114,6 +134,13 @@ section {
     flex: 0.55;
 }
 
+.column-41-6 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100vw;
+    flex: 0.416;
+}
+
 .column-45 {
     display: flex;
     flex-direction: column;
@@ -140,14 +167,78 @@ section {
     margin-right: 5%;
 }
 
-#landing-img img{
+#landing-img {
     width: 55vw;
+}
+
+#about {
+    width: 99.9vw;
+    background-color: #f1f6fd;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+#cards {
+    background-color: white; 
+    box-shadow: 0 3px 10px 0 rgb(38 59 94 / 10%);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-content: center;
+}
+
+#card-content {
+    margin: auto;
+    padding: 10px;
+}
+
+#cards:hover {
+    transition: all 100ms ease;
+    background-color: whitesmoke;
+}
+
+#card-heading {
+    font-weight: 500; 
+    color: #1d1d33;
+}
+
+#card-text {
+    color: #8090b5; 
+    line-height: 1.4; 
+}
+
+#cards img {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    height: 145px;
+    width: 145px;
+}
+
+#services {
+    padding-bottom: 15vh;
+}
+
+#service-cards {
+    background-color: white; 
+    box-shadow: 0 3px 10px 0 rgb(38 59 94 / 10%);
+    display: flex;
+    align-items: center;
+    height: 66vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: auto;
 }
 
 @media screen and (max-width: 991px) {
     .container {
         width: 100vw;
         margin: auto;
+    }
+
+    #welcome-links-div {
+        justify-content: center;
     }
 
     #landing-message {
@@ -158,12 +249,12 @@ section {
         text-align: center;
     }
 
-    #landing-img img{
+    #landing-img {
         width: 80vw;
         margin: auto;
     }
 
-    #landing-img {
+    #landing-img-container {
         padding-top: 10%;
         width: 100vw;
         flex: 1;
@@ -171,5 +262,9 @@ section {
 
     .navbar-toggler-icon {
         color: rgb(147, 66, 253);
+    }
+
+    #service-cards {
+        
     }
 }
