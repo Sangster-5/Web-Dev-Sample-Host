@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KrakenVPN</title>
 
-    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <script src="https://kit.fontawesome.com/c12bb62ffb.js" crossorigin="anonymous"></script>
@@ -61,7 +61,7 @@
                         </p>
 
 
-                        <div class="p-10px-t" id="welcome-links-div" style="display: flex; align-items: flex-end;">
+                        <div id="welcome-links-div" style="display: flex; align-items: flex-end;">
                             <a class="btn btn-primary" id="welcome-links" href="#services">View Services <i class="fas fa-arrow-right d-none d-md-inline m-10px-l"></i></a>
                             <a class="btn btn-primary" id="welcome-links" target="_blank" href="https://discord.gg/tqaupHJgDx">Discord <i class="fab fa-discord d-none d-md-inline m-10px-l"></i></a>
                         </div>
@@ -125,14 +125,120 @@
                 </div>
             </div>
         </section>
-        <section id="services" class="row">
-            <div id="service-cards" class="column-27">
-            </div>
-            <div id="service-cards" class="column-27">
-            </div>
-            <div id="service-cards" class="column-27">
+        <section id="services">
+            <div class="container">
+                <div class="row column-66" style="color: #1d1d33; font-weight: 600; display: flex; justify-content: center; margin-bottom: 25px; text-align: center;">
+                    <h3 style="margin: 15px;">Services & Pricing</h3>
+                    <p style="color: #8090b5; font-weight: 400; line-height: 1.7; margin-left: 5%; margin-right: 5%;">
+                        We offer both normal VPN with 48+ locations & Private VPN Servers!
+                    </p>
+                </div>
+
+                <div class="row" style="align-items: center;">
+                    <div class="col-lg-4">
+                        <div id="service-cards">
+                            <div class="row" style="padding-top: 35px; padding-bottom: 30px;">
+                                <h4 class="col-4" style="text-align: center; font-weight: 700; color: #1d1d33; padding-left: 25px; padding-right: 105px;">Normal</h4>
+                                <h3 style="color: rgb(147, 66, 253); font-weight: 800;">$4.99</h3><span style="color: #8090b5;">/Per Month</span>
+                            </div>
+
+                            <div class="container row col" style="margin: auto; border-top: 0.1rem solid rgb(209, 209, 209); border-bottom: 0.1rem solid rgb(209, 209, 209); width: 90%;">
+                                <ul style="list-style: none;">
+                                    <li style="color: #8090b5; margin-top: 15px;">1 Device <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Unlimited DDoS Protection <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Access to all locations <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Attack Alerts <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Military-Grade Encryption <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">One Time or Subscription <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                </ul>
+                            </div>
+                            <div class="container row" style="height: 90px; display: flex; align-items: center; justify-content: center; margin: auto;">
+                                <a href="/" class="nav-link" id="plan-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="service-cards">
+                            <div class="row" style="padding-top: 35px; padding-bottom: 30px;">
+                                <h4 class="col-4" style="text-align: center; font-weight: 700; color: #1d1d33;">Pro</h4>
+                                <h3 style="color: rgb(147, 66, 253); font-weight: 800;">$9.99</h3><span style="color: #8090b5;">/Per Month</span>
+                            </div>
+    
+                            <div class="container row col" style="margin: auto; border-top: 0.1rem solid rgb(209, 209, 209); border-bottom: 0.1rem solid rgb(209, 209, 209); width: 90%;">
+                                <ul style="list-style: none;">
+                                    <li style="color: #8090b5; margin-top: 15px;">2 Devices <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Unlimited DDoS Protection <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Access to all locations <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Attack Alerts <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Military-Grade Encryption <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">One Time or Subscription <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                </ul>
+                            </div>
+                            <div class="container row" style="height: 90px; display: flex; align-items: center; justify-content: center; margin: auto;">
+                                <a href="/" class="nav-link" id="plan-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="service-cards">
+                            <div class="row" style="padding-top: 35px; padding-bottom: 30px;">
+                                <h4 class="col-4" style="text-align: center; font-weight: 700; color: #1d1d33; padding-left: 25px;">Family</h4>
+                                 <h3 style="color: rgb(147, 66, 253); font-weight: 800;">$14.99</h3><span style="color: #8090b5;">/Per Month</span>
+                            </div>
+    
+                            <div class="container row col" style="margin: auto; border-top: 0.1rem solid rgb(209, 209, 209); border-bottom: 0.1rem solid rgb(209, 209, 209); width: 90%;">
+                                <ul style="list-style: none;">
+                                    <li style="color: #8090b5; margin-top: 15px;">3 Devices <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Unlimited DDoS Protection <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Access to all locations <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Attack Alerts <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">Military-Grade Encryption <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                    <li style="color: #8090b5; margin-top: 15px;">One Time or Subscription <i class="fas fa-check" style="margin-left: 10px; position: absolute; right: 5px;"></i></li>
+                                </ul>
+                            </div>
+                            <div class="container row" style="height: 90px; display: flex; align-items: center; justify-content: center; margin: auto;">
+                                <a href="/" class="nav-link" id="plan-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer style="background-color: black; min-height: 300px; position: relative; bottom: 0;" class="footer">
+            <div class="container row" style="margin: 50px; width: 90%;">
+                <div class="col-lg-3 col-sm-12 mr-auto" style="margin-top: 50px;">
+                <img src="./Assets/Images/octovpn-logo.svg" alt="Failed">
+                <br>
+                <br>
+
+                <p style="color: #8090b5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quas, cum facere.</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 mr-auto" style="margin-top: 50px;">
+                    
+            </div>
+            <div class="col-lg-3 col-sm-12 mr-auto" style="margin-top: 50px;">
+                <h6 style="color: whitesmoke; font-weight: 600; text-align: start">Links</h6>
+                <ul style="list-style: none; line-height: 1.25rem; margin: 0;"> 
+                    <li style="padding: 0; margin-top: 10px;"><a style="color: rgba(255,255,255,.6); padding: 0;" class="nav-link" href="/">Home</a></li>
+                    <li style="padding: 0; margin-top: 10px;"><a style="color: rgba(255,255,255,.6); padding: 0;" class="nav-link" href="/#about">About</a></li>
+                    <li style="padding: 0; margin-top: 10px;"><a style="color: rgba(255,255,255,.6); padding: 0;" class="nav-link" href="/#services">Services</a></li>
+                    <li style="padding: 0; margin-top: 10px;"><a style="color: rgba(255,255,255,.6); padding: 0;" class="nav-link" href="/">Purchase</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-sm-12 mr-auto" style="margin-top: 50px;">
+                <h6 style="color: whitesmoke; font-weight: 600; text-align: start">Social Media</h6>
+                <div class="row" style="width: 100%;">
+                    <a href="twitter.com"><i style="color: whitesmoke; background-color: rgb(147, 66, 253); height: 30px; width: 30px; border-radius: 20%; display: flex; align-items: center; justify-content: center; margin-left: 15px; margin-right: 10px; margin-top: 10px;" class="fab fa-twitter"></i></a>
+                    <a href="discord.gg"><i style="color: whitesmoke; background-color: rgb(147, 66, 253); height: 30px; width: 30px; border-radius: 20%; display: flex; align-items: center; justify-content: center; margin: 10px;" class="fab fa-discord"></i></a>
+                    <a href="youtube.com"><i style="color: whitesmoke; background-color: rgb(147, 66, 253); height: 30px; width: 30px; border-radius: 20%; display: flex; align-items: center; justify-content: center; margin: 10px;" class="fab fa-youtube"></i></a>
+                    <a href="instagram.com"><i style="color: whitesmoke; background-color: rgb(147, 66, 253); height: 30px; width: 30px; border-radius: 20%; display: flex; align-items: center; justify-content: center; margin: 10px;" class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
